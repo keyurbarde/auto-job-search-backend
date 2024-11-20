@@ -5,6 +5,7 @@ def extract_skills():
     def extract_text_from_pdf(pdf_path):
         return extract_text(pdf_path)
 
+
     resume_path = "C:/Users/keyur/Desktop/VIT/EDI/edi5/AutoJobSearch/resume/resume.pdf"
     text = extract_text_from_pdf(resume_path)
     print(text)
