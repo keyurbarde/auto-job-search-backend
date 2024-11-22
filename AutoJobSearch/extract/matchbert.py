@@ -27,20 +27,19 @@ def calculate_similarity(text1, text2):
     return similarity[0][0]
 
 # Function to get the most relevant job listings based on resume and job descriptions
-def get_most_relevant_jobs(resume_data, job_listings, top_n=10):
+def get_most_relevant_jobs(skills, job_listings, top_n=10):
     job_scores = []
+
+    resume_skills = ' '.join(skills)
 
     # Process each job listing
     for job in job_listings:
         job_title = job['Title']
         job_description = job['Description']
 
-        # Access skills and education from resume_data dictionary
-        resume_skills = ' '.join(resume_data.get('skill', []))  # Get skills from resume
-        resume_education = ' '.join(resume_data.get('education', []))  # Get education from resume
 
         # Combine skills and education into a single resume description
-        resume_full = resume_skills + ' ' + resume_education
+        resume_full = resume_skills
 
         # Calculate similarity between the resume and the job title/description
         title_similarity = calculate_similarity(job_title, resume_full)
@@ -57,17 +56,11 @@ def get_most_relevant_jobs(resume_data, job_listings, top_n=10):
     # Return the top N jobs
     return job_listings
 
-def calc_and_sort_jobs(skills):
+def calc_and_sort_jobs(skills, jobs):
 
-    with open('resume_data.pkl', 'rb') as f:
-        resume_data = pickle.load(f)
+    job_listings = jobs
 
-    resume_data['skill'] = skills
-
-    with open('scraped_data.pkl', 'rb') as u:
-        job_listings = pickle.load(u)
-
-    top_jobs = get_most_relevant_jobs(resume_data, job_listings, top_n=10)
+    top_jobs = get_most_relevant_jobs(skills, job_listings, top_n=10)
 
     print("Top 10 most relevant jobs:")
     for i, job in enumerate(top_jobs, start=1):

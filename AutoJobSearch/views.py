@@ -39,6 +39,6 @@ def postChosenSkills(request):
 
     results = scrape_indeed(title, location)
 
-    jobs = calc_and_sort_jobs(data['skills'])
+    jobs = calc_and_sort_jobs(data['skills'], results)
 
     return Response(jobs, status=status.HTTP_200_OK)

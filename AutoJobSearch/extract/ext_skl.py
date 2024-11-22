@@ -8,7 +8,6 @@ def extract_skills():
 
     resume_path = "C:/Users/keyur/Desktop/VIT/EDI/edi5/AutoJobSearch/resume/resume.pdf"
     text = extract_text_from_pdf(resume_path)
-    print(text)
 
     def extract_skills_from_resume(text, skills_list):
         skills = []
@@ -119,7 +118,7 @@ def extract_skills():
             'Visual Arts', 'Graphic Design', 'Fashion Design', 'Industrial Design', 'Product Design', 'Animation', 'Film Studies', 'Media Studies',
             'Communication Studies', 'Journalism', 'Broadcasting', 'Creative Writing', 'English Literature', 'Linguistics', 'Translation Studies',
             'Foreign Languages', 'Modern Languages', 'Classical Studies', 'History', 'Archaeology', 'Philosophy', 'Theology', 'Religious Studies',
-            'Ethics', 'Education', 'Early Childhood Education', 'Elementary Education', 'Secondary Education', 'Special Education', 'Higher Education',
+            'Ethics', 'Early Childhood Education', 'Elementary Education', 'Secondary Education', 'Special Education', 'Higher Education',
             'Adult Education', 'Distance Education', 'Online Education', 'Instructional Design', 'Curriculum Development'
             'Library Science', 'Information Science', 'Computer Engineering', 'Software Development', 'Cybersecurity', 'Information Security',
             'Network Engineering', 'Data Science', 'Data Analytics', 'Business Analytics', 'Operations Research', 'Decision Sciences',
@@ -152,7 +151,7 @@ def extract_skills():
     }
 
     with open("resume_data.pkl","wb") as f:
-        pickle.dump(resume_data,f)
+        pickle.dump(text,f)
 
     return resume_data
 
