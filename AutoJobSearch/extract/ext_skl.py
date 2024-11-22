@@ -43,14 +43,8 @@ def extract_skills():
         'Renewable Energy', 'Energy Storage Systems', 'Cybersecurity', 'Information Security', 'Digital Forensics',
 
         # Software Development and IT
-        'Programming Languages', 'Python', 'Java', 'JavaScript', 'C++', 'C#', 'GoLang', 'R', 'Ruby', 'Swift', 
-        'Kotlin', 'PHP', 'Perl', 'Shell Scripting', 'SQL', 'NoSQL', 'MongoDB', 'PostgreSQL', 'Redis', 'Elasticsearch',
-        'DevOps', 'CI/CD', 'Kubernetes', 'Docker', 'Terraform', 'Jenkins', 'AWS', 'Azure', 'Google Cloud Platform',
-        'Linux Administration', 'Monitoring Tools', 'Prometheus', 'Grafana', 'Nagios', 'Load Balancing',
-        'Infrastructure as Code', 'Microservices', 'Agile Methodology', 'Scrum', 'Kanban', 'Jira', 'Confluence',
-        'Git', 'GitHub', 'GitLab', 'Version Control', 'Automation Testing', 'Selenium', 'Cypress', 'JUnit', 
-        'Load Testing', 'Performance Optimization', 'Spring', 'Spring Boot', 'Maven', 'React', 'HTML', 'CSS',
-        'Python', 'Java', 'C++', 'JavaScript', 'C#', 'Ruby', 'Swift', 'Kotlin', 'Go', 'TypeScript', 'HTML5', 'CSS3', 'React', 'Angular', 'Vue.js', 'Node.js', 'Express.js', 'Django', 'Flask', 'RESTful APIs', 'SQL', 'MySQL', 'PostgreSQL', 'MongoDB', 'Oracle', 'SQLite', 'NoSQL', 'Linux/Unix', 'Windows Server', 'macOS', 'Git', 'GitHub', 'GitLab', 'Bitbucket', 'Docker', 'Kubernetes', 'Jenkins', 'Ansible', 'Terraform', 'Amazon Web Services (AWS)', 'Microsoft Azure', 'Google Cloud Platform (GCP)', 'Android Development (Java/Kotlin)', 'iOS Development (Swift)', 'Network Security', 'Ethical Hacking', 'Cryptography', 'Security Protocols', 'Penetration Testing', 'NumPy', 'Pandas', 'Matplotlib', 'Scikit-learn', 'TensorFlow', 'PyTorch', 'Data Analysis', 'Natural Language Processing (NLP)', 'Sorting Algorithms', 'Searching Algorithms', 'Graph Theory', 'Dynamic Programming', 'Agile', 'Scrum', 'Kanban', 'Object-Oriented Programming (OOP)', 'Functional Programming', 'Event-Driven Programming', 'WebSockets', 'GraphQL', 'WebAssembly', 'Apache', 'Nginx', 'Tomcat', 'JUnit', 'Selenium', 'Jest', 'Continuous Integration', 'Continuous Deployment', 'OpenAPI', 'Postman', 'TCP/IP', 'DNS', 'HTTP/HTTPS', 'VPN', 'Spring (Java)', 'Django (Python)', 'Ruby on Rails', 'Flask (Python)', 'Visual Studio Code', 'IntelliJ IDEA', 'Eclipse', 'Jira', 'Trello',  'GUI',
+        'Programming Languages', 'Python', 'Java', 'JavaScript', 'C++', 'C#', 'GoLang', 'R', 'Ruby', 'Swift', 'Kotlin', 'PHP', 'Perl', 'Shell Scripting', 'SQL', 'NoSQL', 'MongoDB', 'PostgreSQL', 'Redis', 'Elasticsearch', 'DevOps', 'CI/CD', 'Kubernetes', 'Docker', 'Terraform', 'Jenkins', 'AWS', 'Azure', 'Google Cloud Platform', 'Linux Administration', 'Monitoring Tools', 'Prometheus', 'Grafana', 'Nagios', 'Load Balancing', 'Infrastructure as Code', 'Microservices', 'Agile Methodology', 'Scrum', 'Kanban', 'Jira', 'Confluence', 'Git', 'GitHub', 'GitLab', 'Version Control', 'Automation Testing', 'Selenium', 'Cypress', 'JUnit', 'Load Testing', 'Performance Optimization', 'Spring', 'Spring Boot', 'Maven', 'React', 'HTML', 'CSS', 'TypeScript', 'HTML5', 'CSS3', 'Angular', 'Vue.js', 'Node.js', 'Express.js', 'Django', 'Flask', 'RESTful APIs', 'MySQL', 'Oracle', 'SQLite', 'Linux/Unix', 'Windows Server', 'macOS', 'Bitbucket', 'Ansible', 'Android Development (Java/Kotlin)', 'iOS Development (Swift)', 'Network Security', 'Ethical Hacking', 'Cryptography', 'Security Protocols', 'Penetration Testing', 'NumPy', 'Pandas', 'Matplotlib', 'Scikit-learn', 'TensorFlow', 'PyTorch', 'Data Analysis', 'Natural Language Processing (NLP)', 'Sorting Algorithms', 'Searching Algorithms', 'Graph Theory', 'Dynamic Programming', 'Object-Oriented Programming (OOP)', 'Functional Programming', 'Event-Driven Programming', 'WebSockets', 'GraphQL', 'WebAssembly', 'Apache', 'Nginx', 'Tomcat', 'Jest', 'Continuous Integration', 'Continuous Deployment', 'OpenAPI', 'Postman', 'TCP/IP', 'DNS', 'HTTP/HTTPS', 'VPN', 'Ruby on Rails', 'Visual Studio Code', 'IntelliJ IDEA', 'Eclipse', 'Trello', 'GUI',
+        # 'Python', 'Java', 'C++', 'JavaScript', 'C#', 'Ruby', 'Swift', 'Kotlin', 'Go', 'TypeScript', 'HTML5', 'CSS3', 'React', 'Angular', 'Vue.js', 'Node.js', 'Express.js', 'Django', 'Flask', 'RESTful APIs', 'SQL', 'MySQL', 'PostgreSQL', 'MongoDB', 'Oracle', 'SQLite', 'NoSQL', 'Linux/Unix', 'Windows Server', 'macOS', 'Git', 'GitHub', 'GitLab', 'Bitbucket', 'Docker', 'Kubernetes', 'Jenkins', 'Ansible', 'Terraform', 'Amazon Web Services (AWS)', 'Microsoft Azure', 'Google Cloud Platform (GCP)', 'Android Development (Java/Kotlin)', 'iOS Development (Swift)', 'Network Security', 'Ethical Hacking', 'Cryptography', 'Security Protocols', 'Penetration Testing', 'NumPy', 'Pandas', 'Matplotlib', 'Scikit-learn', 'TensorFlow', 'PyTorch', 'Data Analysis', 'Natural Language Processing (NLP)', 'Sorting Algorithms', 'Searching Algorithms', 'Graph Theory', 'Dynamic Programming', 'Agile', 'Scrum', 'Kanban', 'Object-Oriented Programming (OOP)', 'Functional Programming', 'Event-Driven Programming', 'WebSockets', 'GraphQL', 'WebAssembly', 'Apache', 'Nginx', 'Tomcat', 'JUnit', 'Selenium', 'Jest', 'Continuous Integration', 'Continuous Deployment', 'OpenAPI', 'Postman', 'TCP/IP', 'DNS', 'HTTP/HTTPS', 'VPN', 'Spring (Java)', 'Django (Python)', 'Ruby on Rails', 'Flask (Python)', 'Visual Studio Code', 'IntelliJ IDEA', 'Eclipse', 'Jira', 'Trello',  'GUI',
 
         # Management and Business
         'Project Management', 'Risk Management', 'Strategic Management', 'Business Administration', 
@@ -63,7 +57,7 @@ def extract_skills():
         # Social Sciences and Design
         'Psychology', 'Counseling', 'Social Work', 'Sociology', 'Anthropology', 'Political Science', 
         'International Relations', 'Urban Planning', 'Architecture', 'Interior Design', 'Landscape Architecture',
-        'Graphic Design', 'User Experience (UX)', 'User Interface (UI)', 'Digital Media', 'Animation',
+        'Graphic Design', 'User Experience (UX)', 'User Interface (UI)', 'UI', 'UX', 'UI/UX', 'UX/UI', 'User Experience' , 'User Interface', 'Digital Media', 'Animation',
         'Game Development', 'Film Studies', 'Media Production', 'Creative Writing', 'English Literature',
         'History', 'Philosophy', 'Theology', 'Religious Studies',
 
@@ -158,6 +152,9 @@ def extract_skills():
     }
 
     with open("resume_data.pkl","wb") as f:
-        pickle.dump(text,f)
+        pickle.dump(resume_data,f)
 
     return resume_data
+
+if __name__ == "__main__":
+    extract_skills()

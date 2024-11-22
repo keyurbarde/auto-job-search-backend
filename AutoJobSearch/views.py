@@ -3,6 +3,8 @@ from rest_framework.response import Response
 from rest_framework import status
 from .extract.ext_skl import extract_skills
 from .extract.pickleUse import find_domain
+from .extract.scrape import scrape_indeed
+from .extract.matchbert import calc_and_sort_jobs
 import os
 
 @api_view(['POST'])
@@ -29,6 +31,14 @@ def postResume(request):
 
 @api_view(['POST'])
 def postChosenSkills(request):
-    chosen_skills = request.data
+    data = request.data
+    # print(data["title"])
 
-    return Response(chosen_skills, status=status.HTTP_200_OK)
+    title = data['title']
+    location = data['location']
+
+    results = scrape_indeed(title, location)
+
+    jobs = calc_and_sort_jobs(data['skills'])
+
+    return Response(jobs, status=status.HTTP_200_OK)
